@@ -23,21 +23,27 @@
   <header>
     <nav>
       <img src="./images/logo.svg" alt="logo">
-      <ul>
-        <li>About</li>
-        <li>Careers</li>
-        <li>Events</li>
-        <li>Products</li>
-        <li>Support</li>
-      </ul>
-      <div><img src="./images/icon-hamburger.svg" alt=""></div>
+      <div id="menu">
+        <div>
+          <img src="./images/logo.svg" alt="logo">
+          <img src="./images/icon-close.svg" alt="icon-close" height="25px" id="menu-close">
+        </div>
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Products</li>
+          <li>Support</li>
+        </ul>
+      </div>
+      <div><img src="./images/icon-hamburger.svg" alt="icon-hamburger" id="menu-open"></div>
     </nav>
     <div class="main-text">
       <h1>Immersive experiences that deliver</h1>
     </div>
   </header>
 <main>
-  <section class="vr">
+  <section id="vr">
       <img src="./images/mobile/image-interactive.jpg" alt="image-interactive">
       <div>
         <h2>The leader in interactive VR</h2>
@@ -50,61 +56,77 @@
       </div>
   </section>
   <section class="creations">
-      <h2>Our creations</h2>
+      <div id="creation-btn">
+        <h2>Our creations</h2>
+        <button>See all</button>
+      </div>
     
-      <button>See all</button>
-    
-      <div>
-        <img src="./images/mobile/image-deep-earth.jpg" alt="earth">
-        <div class="fade"></div>
-        <p>Deep earth</p>
-      </div>
-      <div>
-        <img src="./images/mobile/image-night-arcade.jpg" alt="image-night-arcade">
-        <p>Night arcade</p>
-      </div>
-      <div>
-        <img src="./images/mobile/image-soccer-team.jpg" alt="image-soccer-team">
-        <p>Soccer team VR</p>
-      </div>
-      <div>
-        <img src="./images/mobile/image-grid.jpg" alt="image-grid">
-        <p>The grid</p>
-      </div>
-      <div>
-        <img src="./images/mobile/image-from-above.jpg" alt="image-from-above">
-        <p>From up above VR</p>
-      </div>
-      <div>
-        <img src="./images/mobile/image-pocket-borealis.jpg" alt="Pocket">
-        <p>Pocket borealis</p>
-      </div>
-      <div>
-        <img src="./images/mobile/image-curiosity.jpg" alt="curiosity">
-        <p>The curiosity</p>
-      </div>
-      <div>
-        <img src="./images/mobile/image-fisheye.jpg" alt="fisheye">
-        <p>Make it fisheye</p>
+      <div id="grid-imgs">
+        <div class="creation-imgs">
+          <img src="./images/desktop/image-deep-earth.jpg" alt="earth"  class="desktop-img">
+          <img src="./images/mobile/image-deep-earth.jpg" alt="earth"  class="mobile-img">
+          <div class="fade"></div>
+          <p>Deep earth</p>
+        </div>
+        <div class="creation-imgs">
+          <img src="./images/desktop/image-night-arcade.jpg" alt="image-night-arcade" class="desktop-img">
+          <img src="./images/mobile/image-night-arcade.jpg" alt="image-night-arcade" class="mobile-img">
+          <p>Night arcade</p>
+        </div>
+        <div class="creation-imgs">
+          <img src="./images/desktop/image-soccer-team.jpg" alt="image-soccer-team" class="desktop-img">
+          <img src="./images/mobile/image-soccer-team.jpg" alt="image-soccer-team" class="mobile-img">
+          <p>Soccer team VR</p>
+        </div>
+        <div class="creation-imgs">
+          <img src="./images/desktop/image-grid.jpg" alt="image-grid" class="desktop-img">
+          <img src="./images/mobile/image-grid.jpg" alt="image-grid" class="mobile-img">
+          <p>The grid</p>
+        </div>
+        <div class="creation-imgs">
+          <img src="./images/desktop/image-from-above.jpg" alt="image-from-above" class="desktop-img">
+          <img src="./images/mobile/image-from-above.jpg" alt="image-from-above" class="mobile-img">
+          <p>From up above VR</p>
+        </div>
+        <div class="creation-imgs">
+          <img src="./images/desktop/image-pocket-borealis.jpg" alt="Pocket" class="desktop-img">
+          <img src="./images/mobile/image-pocket-borealis.jpg" alt="Pocket" class="mobile-img">
+          <p>Pocket borealis</p>
+        </div>
+        <div class="creation-imgs">
+          <img src="./images/desktop/image-curiosity.jpg" alt="curiosity" class="desktop-img">
+          <img src="./images/mobile/image-curiosity.jpg" alt="curiosity" class="mobile-img">
+          <p>The curiosity</p>
+        </div>
+        <div class="creation-imgs">
+          <img src="./images/desktop/image-fisheye.jpg" alt="fisheye" class="desktop-img">
+          <img src="./images/mobile/image-fisheye.jpg" alt="fisheye" class="mobile-img">
+          <p>Make it fisheye</p>
+        </div>
       </div>
   </section>
 </main>
   <footer>
-    <img src="./images/logo.svg" alt="Loopstudios" id="footer-logo">
-    <ul>
-      <li>About</li>
-      <li>Careers</li>
-      <li>Events</li>
-      <li>Products</li>
-      <li>Support</li>
-    </ul>
-    <div id="social-media">
-      <img src="./images/icon-facebook.svg" alt="icon-facebook">
-      <img src="./images/icon-twitter.svg" alt="icon-twitter">
-      <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
-      <img src="./images/icon-instagram.svg" alt="icon-instagram">
-    </div>
-    <p>© 2021 Loopstudios. All rights reserved.</p>
+    <section>
+      <img src="./images/logo.svg" alt="Loopstudios" id="footer-logo">
+      <ul>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Events</li>
+        <li>Products</li>
+        <li>Support</li>
+      </ul>
+    </section>
+    <section>
+      <div id="social-media">
+        <img src="./images/icon-facebook.svg" alt="icon-facebook">
+        <img src="./images/icon-twitter.svg" alt="icon-twitter">
+        <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
+        <img src="./images/icon-instagram.svg" alt="icon-instagram">
+      </div>
+      <p>© 2021 Loopstudios. All rights reserved.</p>
+    </section>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
